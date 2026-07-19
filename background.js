@@ -1,12 +1,3 @@
-// chrome.runtime.onConnect.addListener(function(port) {
-//   if (port.name === "START") {
-//     port.onMessage.addListener(function(msg) {
-//       console.log("Message received: ", msg.greeting);
-//       injectMainWorld(tabId);
-    
-//     });
-//   }
-// });
 
 
 
