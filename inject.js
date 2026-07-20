@@ -7,6 +7,8 @@ const pressedKeys = new Set();
 const MAX_TIME = 300; 
 const MIN_TIME = 80;
 
+
+
 const LEFT_STICK_KEYS = {
   KeyW: { axis: "ly", sign: -1 },
   KeyS: { axis: "ly", sign: +1 },
@@ -97,6 +99,16 @@ function updateLeftStick() {
 
 
 let isPointerLocked = false;
+
+
+
+document.addEventListener("dblclick", async () => {
+      document.exitPointerLock();
+    isPointerLocked = false;
+    input.axes.rx = 0;
+    input.axes.ry = 0;
+});
+
 
 document.addEventListener("click", async () => {
   try {
